@@ -19,27 +19,34 @@
 
 - POST /transactions
     - Adds a new transaction (income or expense).
-    - Request body :- json 
+    - Request body :- json
+
         {
-            "type": "income",
-            "category": "salary",
-            "amount": 5000,
+            "type": "expense",
+            "category": "Petrol",
+            "amount": 2000,
             "date": "2024-10-01",
-            "description": "October Salary"
+            "description": "Car"
         }
+
+    - ![CHEESE!](images/Post%20Data%20Feed.PNG)
 
 - GET /transactions
     - Retrieves all transactions.
+    - ![CHEESE!](images/Get%20Retrive.PNG)
 
 - GET /transactions/:id
     - Retrieves a transaction by ID.
+    - ![CHEESE!](images/Get%20Retrive%20By%20Id.PNG)
 
 - PUT /transactions/:id
     - Updates a transaction by ID.
     - Request body same as POST /transactions.
+    - - ![CHEESE!](images/Put%20Data%20Update.PNG)
 
 - DELETE /transactions/:id
     - Deletes a transaction by ID.
+    - ![CHEESE!](images/Delete%20Transactions%20dlt.PNG)
 
 - GET /summary
     - Retrieves a summary of transactions, including total income, total expenses, and balance.
@@ -47,3 +54,4 @@
         - category: Filter by category.
         - startDate: Filter by start date.
         - endDate: Filter by end date.
+    - ![CHEESE!](images/Get%20summary.PNG)
